@@ -4,3 +4,113 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: lato;
+    font-size: 72px;
+}
+
+section {
+    background: whitesmoke;
+    height: calc(100vh - 64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-nav a {
+    color: aliceblue;
+    background: rgb(45, 48, 192);
+    height: 64px;
+    font-family: lato;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.4s;
+}
+
+#main-nav a:hover {
+    background: #273261;
+}
+
+#main-nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+}
+
+#main-nav li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0;
+}
+
+.submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100‰;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li:hover .submenu-2 li {
+    display: block;
+}
+
+.arrow {
+    border: white;
+    margin-left: 8px;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    background-color: azure;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 750px) {
+    body{background-color: blue;}
+    
+    .submenu li {
+        display: block;
+        position: static;
+        top: 0px;
+    }
+
+    .navi {
+    background-color: aqua;}
+    
+    .navigation ul {
+        background-color: rgb(243, 6, 6);
+        flex-wrap: nowrap;
+    }
+}

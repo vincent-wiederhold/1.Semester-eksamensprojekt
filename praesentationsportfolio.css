@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 h1 {
     font-family: lato;
     font-size: 72px;
 }
-
+body {
+    background-color: rgb(57, 45, 192, 25%);
+  }
 section {
     background: whitesmoke;
     height: calc(100vh - 64px);
@@ -19,7 +20,7 @@ section {
 
 #main-nav a {
     color: aliceblue;
-    background: rgb(45, 48, 192);
+    background: rgb(57, 45, 192);
     height: 64px;
     font-family: lato;
     font-weight: bold;
@@ -97,20 +98,56 @@ p {
     padding: 10px;
 }
 
-@media screen and (min-width: 750px) {
+/*@media screen and (min-width: 750px) {
     body{background-color: blue;}
     
     .submenu li {
         display: block;
         position: static;
         top: 0px;
+        flex-direction: column-reverse;
     }
 
     .navi {
-    background-color: aqua;}
-    
-    .navigation ul {
-        background-color: rgb(243, 6, 6);
-        flex-wrap: nowrap;
+    background-color: aqua;
+    flex-direction: row;}
+
+    .submenu {
+        flex-direction: row;
     }
+   /* .navigation ul {
+        background-color: rgb(229, 0, 0);
+        display: ;
+    }
+}*/
+@media screen and (min-width: 750px)
+{
+#main-nav ul {
+    flex-wrap: nowrap;
+}
+}
+
+img {
+    border: 10px solid #2c11dd;
+    display: block;
+    margin: 50px auto 30px auto;
+}
+p {
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+h1 {
+    color: #2c11dd;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    margin: 50px auto 30px auto
 }

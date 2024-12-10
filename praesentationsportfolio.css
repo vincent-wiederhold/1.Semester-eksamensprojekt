@@ -3,12 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+p {
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+h1 {
+    color: rgb(0, 86, 152);
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    margin: 20px auto 20px auto
+
+}
+h2 {
+    color: rgb(0, 86, 152,50%);
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    margin: 20px auto 20px auto;
+    font-size: 50px;
+}
+/*
 h1 {
     font-family: lato;
-    font-size: 72px;
+    font-size: 72px;*/
 }
 body {
-    background-color: rgb(57, 45, 192, 25%);
+    background-color: rgb(0, 86, 152, 10%);
   }
 section {
     background: whitesmoke;
@@ -20,7 +54,7 @@ section {
 
 #main-nav a {
     color: aliceblue;
-    background: rgb(57, 45, 192);
+    background: rgb(0, 86, 152);
     height: 64px;
     font-family: lato;
     font-weight: bold;
@@ -96,8 +130,13 @@ section {
 p {
     text-align: center;
     padding: 10px;
+    color: rgb(0, 86, 152);
 }
-
+.p1 {
+    text-align: center;
+    padding: 10px;
+    color: yellow 
+}
 /*@media screen and (min-width: 750px) {
     body{background-color: blue;}
     
@@ -128,26 +167,8 @@ p {
 }
 
 img {
-    border: 10px solid #2c11dd;
+    border: 10px solid rgb(0, 86, 152);
     display: block;
     margin: 50px auto 30px auto;
-}
-p {
-    font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-h1 {
-    color: #2c11dd;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-    margin: 50px auto 30px auto
+    background-color: rgb(0, 86, 152)
 }

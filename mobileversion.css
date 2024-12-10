@@ -1,30 +1,31 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-p {
+  }
+  p {
     font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: ??;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-}
-h1 {
+  }
+  
+  h1 {
     color: rgb(0, 86, 152);
     text-align: center;
     font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 20px;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-    margin: 20px auto 20px auto
-
-}
-h2 {
+    margin: 20px auto 20px auto;
+    font-size: 100px
+  }
+  
+  h2 {
     color: rgb(0, 86, 152,50%);
     text-align: center;
     font-family: "Open Sans", sans-serif;
@@ -36,25 +37,17 @@ h2 {
     margin: 20px auto 20px auto;
     font-size: 50px;
 }
-/*
-h1 {
-    font-family: lato;
-    font-size: 72px;*/
-}
-body {
-    background-color: rgb(0, 86, 152, 10%);
-  }
-section {
-    background: whitesmoke;
+  section {
+    background: #f2f4f3;
     height: calc(100vh - 64px);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#main-nav a {
-    color: aliceblue;
-    background: rgb(0, 86, 152);
+  }
+  
+  #main-nav a {
+    color: #f6f7f8;
+    background: #0f166d;
     height: 64px;
     font-family: lato;
     font-weight: bold;
@@ -63,112 +56,105 @@ section {
     justify-content: center;
     text-decoration: none;
     transition: background 0.4s;
-}
+  }
 
-#main-nav a:hover {
+  #main-nav a:hover {
     background: #273261;
-}
+  }
 
-#main-nav ul {
-    width: 100%;
+  #main-nav ul {
     list-style: none;
     display: flex;
-}
-
-#main-nav li {
+  }
+  
+  #main-nav li {
     width: 100%;
     text-align: center;
     position: relative;
-}
-
-#main-nav li:hover .submenu > li {
+  }
+  
+  #main-nav li:hover .submenu > li {
     display: block;
     flex-direction: column;
-    top: 0;
-}
-
-.submenu li {
+    top: 0px;
+  }
+  
+  .submenu li {
     display: none;
     position: absolute;
     top: 0px;
-}
-
-.submenu {
+  }
+  
+  .submenu {
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 100‰;
-}
-
-.submenu li {
+    width: 100%;
+  }
+  
+  .submenu li {
     position: relative;
-}
-
-.submenu li:hover .submenu-2 li {
+  }
+  
+  .submenu li:hover .submenu-2 li {
     display: block;
-}
-
-.arrow {
+  }
+  
+  .arrow {
     border: white;
     margin-left: 8px;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
-}
+  }
 
-.responsive {
+  .responsive {
     max-width: 100%;
     height: auto;
-    background-color: azure;
-}
+    background-color: #f2f4f3;
+  }
 
-.down {
+  .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-}
+  }
 
-p {
+  p {
     text-align: center;
     padding: 10px;
-    color: rgb(0, 86, 152);
-}
-.p1 {
-    text-align: center;
-    padding: 10px;
-    color: yellow 
-}
-/*@media screen and (min-width: 750px) {
-    body{background-color: blue;}
-    
-    .submenu li {
-        display: block;
-        position: static;
-        top: 0px;
-        flex-direction: column-reverse;
+    color: #273261;
+  }
+  
+  @media screen and (min-width: 750px) {
+    body{background-color: aqua;}
+
+    .submenu {
+      display: block ;
+      flex-direction: row;
+      position: static;
+      height: 50px;
     }
 
     .navi {
-    background-color: aqua;
-    flex-direction: row;}
-
-    .submenu {
-        flex-direction: row;
+        background-color: aqua;}
+    .navigation ul {
+        background-color: rgb(255, 0, 21);
+        flex-wrap: nowrap;
     }
-   /* .navigation ul {
-        background-color: rgb(229, 0, 0);
-        display: ;
-    }
-}*/
-@media screen and (min-width: 750px)
-{
-#main-nav ul {
-    flex-wrap: nowrap;
-}
-}
 
-img {
-    border: 10px solid rgb(0, 86, 152);
-    display: block;
-    margin: 50px auto 30px auto;
-    background-color: rgb(0, 86, 152)
+    #dropdownknap {
+        display: none;
+    }
+    #main-nav li .submenu > li {
+      display: block;
+      flex-direction: column;
+      top: 0px;
+    }
+}
+.footer {
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #273261;
 }
